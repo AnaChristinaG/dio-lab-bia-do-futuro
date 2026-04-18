@@ -119,9 +119,7 @@ Para te orientar melhor, preciso de algumas informações como sua renda mensal,
 ---
 
 ## Observações e Aprendizados
-
-> Registre aqui ajustes que você fez nos prompts e por quê.
-
+```
 - A definição de regras claras no system prompt ajudou a reduzir respostas vagas e inconsistentes.
 - O uso de exemplos (few-shot prompting) melhorou a qualidade das respostas e deixou o comportamento do agente mais previsível.
 - A inclusão de critérios financeiros (como o limite de 30% da renda) tornou as respostas mais realistas e úteis.
