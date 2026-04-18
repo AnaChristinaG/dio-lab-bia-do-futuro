@@ -48,9 +48,7 @@ Parâmetros da simulação:
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
-
-O exemplo de contexto montado abaixo, se baseia em dados originais da base de conhecimento, mas os sintetiza deixando apenas as informações mais relenvantes, otimizando o consumo de tokens. Entretanto, vale lembrar que mais importante do que economizar tokens, é ter todas as informações relevantes disponíveis em seu contexto.
+> O exemplo de contexto montado abaixo, se baseia em dados originais da base de conhecimento, mas os sintetiza deixando apenas as informações mais relenvantes, otimizando o consumo de tokens. Entretanto, vale lembrar que mais importante do que economizar tokens, é ter todas as informações relevantes disponíveis em seu contexto.
 
 ```text
 Dados do Cliente:
