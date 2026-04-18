@@ -1,5 +1,44 @@
 # Base de Conhecimento
 
+>[!TIP]
+> **Prompt usado nessa estapa:**
+Preciso organizar a base de conhecimento do meu agente de simulação de empréstimos.
+
+>Tenho estes arquivos de dados:
+- historico_atendimento.csv
+- perfil_investidor.json
+- produtos_financeiros.json
+- transacoes.csv
+  
+
+>Me ajude a:
+
+(1) entender o que tem em cada arquivo  
+(2) decidir como usar esses dados no agente  
+(3) montar um exemplo de contexto com essas informações  
+
+
+>Preciso entender melhor o perfil financeiro do cliente.
+
+
+Com base nos dados disponíveis, me ajude a identificar:
+(1) renda mensal  
+(2) gastos médios  
+(3) quanto sobra no mês  
+(4) se ele tem risco de se endividar  
+
+
+>Quero usar esses dados para simular empréstimos.
+
+
+Me ajude a:
+(1) calcular valor de parcelas  
+(2) calcular percentual da renda comprometida  
+(3) identificar se o empréstimo é viável ou arriscado 
+
+
+---
+
 ## Dados Utilizados
 
 | Arquivo | Formato | Utilização no Agente |
