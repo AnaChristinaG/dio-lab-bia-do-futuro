@@ -1,149 +1,107 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💸 Simaria — Assistente Inteligente de Empréstimos
 
-## Contexto
+> Agente financeiro com IA Generativa desenvolvido como solução para o Lab **"Bia do Futuro"** da [DIO](https://www.dio.me/).
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+**Simaria** (Simulador de Empréstimos com IA) é uma assistente virtual consultiva que ajuda o usuário a entender o impacto real de um empréstimo no seu orçamento — calculando parcelas, analisando comprometimento de renda e orientando com clareza, segurança e sem jargões.
 
 ---
 
-## O Que Você Deve Entregar
+## 🤖 Sobre a Simaria
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+| | |
+|---|---|
+| **Problema resolvido** | Usuários tomam decisões de empréstimo sem entender o impacto financeiro real |
+| **Solução** | Simulação interativa com cálculo de parcelas e análise de comprometimento de renda |
+| **Público-alvo** | Clientes bancários com pouca familiaridade com termos financeiros |
+| **Tom de voz** | Consultivo, humanizado e educativo |
+| **Interface** | Streamlit |
+| **LLM** | Ollama (API local) |
 
 ---
 
-### 2. Base de Conhecimento
+## 🧠 Comportamento do Agente
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+A Simaria segue regras claras de segurança e anti-alucinação:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- Responde **apenas com base nos dados fornecidos** — nunca inventa valores ou taxas
+- Considera **saudável** um comprometimento de até **30% da renda mensal**
+- Alerta o usuário quando o empréstimo representa risco de endividamento
+- Recusa compartilhar dados sensíveis ou de terceiros
+- Solicita mais informações quando o contexto é insuficiente
 
 ---
 
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+📁 dio-lab-bia-do-futuro/
 │
 ├── 📄 README.md
+├── 📁 data/                          # Dados mockados do cliente fictício
+│   ├── historico_atendimento.csv
+│   ├── perfil_investidor.json        # João Silva — renda R$ 5.000/mês
+│   ├── produtos_financeiros.json
+│   └── transacoes.csv
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
+├── 📁 docs/                          # Documentação completa da solução
+│   ├── 01-documentacao-agente.md     # Caso de uso, persona e arquitetura
 │   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
+│   ├── 03-prompts.md                 # System prompt e exemplos (few-shot)
+│   ├── 04-metricas.md                # Avaliação, testes e formulário de feedback
 │   └── 05-pitch.md                   # Roteiro do pitch
 │
 ├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+│   └── app.py
 │
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── 📁 assets/                        # Imagens e diagramas
 ```
 
 ---
 
-## Dicas Finais
+## 📚 Documentação
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+| # | Arquivo | Conteúdo |
+|---|---------|----------|
+| 01 | `docs/01-documentacao-agente.md` | Caso de uso, persona da Simaria e arquitetura do sistema |
+| 02 | `docs/02-base-conhecimento.md` | Estratégia de uso dos dados mockados |
+| 03 | `docs/03-prompts.md` | System prompt, exemplos de interação e aprendizados |
+| 04 | `docs/04-metricas.md` | Cenários de teste, resultados e formulário de feedback |
+| 05 | `docs/05-pitch.md` | Roteiro do pitch de apresentação |
+
+---
+
+## 🛠️ Tecnologias
+
+| Categoria | Ferramenta |
+|-----------|------------|
+| Interface | [Streamlit](https://streamlit.io/) |
+| LLM | Ollama (API local) |
+| Linguagem | Python |
+| Dados | JSON e CSV (dados mockados) |
+
+---
+
+## 🚀 Como Executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/AnaChristinaG/dio-lab-bia-do-futuro.git
+cd dio-lab-bia-do-futuro
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute a aplicação
+streamlit run src/app.py
+```
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido por **Ana Christina G.** como entrega do Lab **"Bia do Futuro"** — DIO.
+
+<img width="1358" height="640" alt="Simaria 00" src="https://github.com/user-attachments/assets/1fff4078-38cf-4f5c-a830-8b1a5b5a05a1" />
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-AnaChristinaG-181717?style=flat&logo=github)](https://github.com/AnaChristinaG)
