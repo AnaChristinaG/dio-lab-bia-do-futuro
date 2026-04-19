@@ -46,24 +46,6 @@ A avaliação da Simaria foi realizada por meio de duas abordagens complementare
 
 ---
 
-## Resultados
-
-Após os testes, registre suas conclusões:
-
-**O que funcionou bem:**
-- Cálculo de parcelas consistente com base na taxa definida;
-- Respostas claras e objetivas;
-- Boa adaptação ao perfil financeiro do cliente;
-- Capacidade de orientar o usuário sobre riscos de endividamento.
-
-**O que pode melhorar:**
-- Interpretação mais avançada de linguagem natural;
-- Integração com modelos de IA para respostas mais dinâmicas;
-- Personalização mais profunda com base em histórico financeiro;
-- Interface mais interativa e visual.
-
----
-
 # 📝 Formulário de Feedback — Simaria
 
 Obrigado por testar a **Simaria**, assistente de simulação de empréstimos! 💰  
@@ -134,13 +116,18 @@ Nota: _____ / 10
 
 ---
 
-## Métricas Avançadas
+## Resultados
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
+Após os testes, registre suas conclusões:
 
-- Tempo de resposta da aplicação;
-- Taxa de erro nas requisições;
-- Monitoramento de interações do usuário;
-- Integração com ferramentas como LangFuse para observabilidade.
+**O que funcionou bem:**
+- Cálculo de parcelas consistente com base na taxa definida;
+- Respostas claras e objetivas;
+- Boa adaptação ao perfil financeiro do cliente;
+- Capacidade de orientar o usuário sobre riscos de endividamento.
 
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+**O que pode melhorar:**
+- Interpretação mais avançada de linguagem natural;
+- Integração com modelos de IA para respostas mais dinâmicas;
+- Personalização mais profunda com base em histórico financeiro;
+- Interface mais interativa e visual.
