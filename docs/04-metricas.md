@@ -1,6 +1,6 @@
 # Avaliação e Métricas
 
-## Como Avaliar seu Agente
+## Como Avaliar o Agente
 
 A avaliação da Simaria foi realizada por meio de duas abordagens complementares:
 
