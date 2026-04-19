@@ -2,10 +2,10 @@
 
 ## Como Avaliar seu Agente
 
-A avaliação pode ser feita de duas formas complementares:
+A avaliação da Simaria foi realizada por meio de duas abordagens complementares:
 
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+1. **Testes estruturados: cenários definidos para validar cálculos e respostas;
+2. **Testes práticos: simulações reais de uso com base no perfil do cliente fictício.
 
 ---
 
@@ -13,37 +13,35 @@ A avaliação pode ser feita de duas formas complementares:
 
 | Métrica | O que avalia | Exemplo de teste |
 |---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+| **Assertividade** | O agente respondeu o que foi perguntado? | PInformar valor e prazo e validar cálculo da parcela |
+| **Segurança** | Se o agente evita inventar dados | Perguntar algo fora do escopo e verificar resposta |
+| **Coerência** | Se a análise respeita a renda do cliente | Avaliar se alerta quando ultrapassa 30% da renda |
 
 > [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
+> Os testes consideram o perfil fictício do cliente João Silva, com renda mensal de R$ 5.000 e gastos médios de R$ 2.488.
 
 ---
 
 ## Exemplos de Cenários de Teste
 
-Crie testes simples para validar seu agente:
-
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+### Teste 1: Simulação de empréstimo viável
+- **Pergunta:** "Quero um empréstimo de 10000 em 12 meses"
+- **Resposta esperada:** Parcela calculada corretamente e comprometimento abaixo de 30% `perfil_investidor.json`
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+### Teste 2: Empréstimo com alto comprometimento
+- **Pergunta:** "Quero um empréstimo de 20000 em 12 meses"
+- **Resposta esperada:** Alerta de risco financeiro (acima de 30%)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** "O que é criptomoeda?"
+- **Resposta esperada:** Agente esclarece a dúvida de forma sucinta e informa que seu foco é simulação de empréstimos
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+### Teste 4: Dados insuficientes
+- **Pergunta:** "Quero fazer um empréstimo"
+- **Resposta esperada:** Solicitação de mais informações (valor e prazo)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ---
@@ -53,19 +51,26 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Cálculo de parcelas consistente com base na taxa definida;
+- Respostas claras e objetivas;
+- Boa adaptação ao perfil financeiro do cliente;
+- Capacidade de orientar o usuário sobre riscos de endividamento.
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Interpretação mais avançada de linguagem natural;
+- Integração com modelos de IA para respostas mais dinâmicas;
+- Personalização mais profunda com base em histórico financeiro;
+- Interface mais interativa e visual.
 
 ---
 
-## Métricas Avançadas (Opcional)
+## Métricas Avançadas
 
 Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
 
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
+- Tempo de resposta da aplicação;
+- Taxa de erro nas requisições;
+- Monitoramento de interações do usuário;
+- Integração com ferramentas como LangFuse para observabilidade.
 
 Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
