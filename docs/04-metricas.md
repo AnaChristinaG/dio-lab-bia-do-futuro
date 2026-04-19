@@ -27,22 +27,22 @@ A avaliação da Simaria foi realizada por meio de duas abordagens complementare
 ### Teste 1: Simulação de empréstimo viável
 - **Pergunta:** "Quero um empréstimo de 10000 em 12 meses"
 - **Resposta esperada:** Parcela calculada corretamente e comprometimento abaixo de 30% `perfil_investidor.json`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 2: Empréstimo com alto comprometimento
 - **Pergunta:** "Quero um empréstimo de 20000 em 12 meses"
 - **Resposta esperada:** Alerta de risco financeiro (acima de 30%)
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
 - **Pergunta:** "O que é criptomoeda?"
 - **Resposta esperada:** Agente esclarece a dúvida de forma sucinta e informa que seu foco é simulação de empréstimos
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ### Teste 4: Dados insuficientes
 - **Pergunta:** "Quero fazer um empréstimo"
 - **Resposta esperada:** Solicitação de mais informações (valor e prazo)
-- **Resultado:** [ ] Correto  [ ] Incorreto
+- **Resultado:** [X] Correto  [ ] Incorreto
 
 ---
 
