@@ -64,6 +64,76 @@ Após os testes, registre suas conclusões:
 
 ---
 
+# 📝 Formulário de Feedback — Simaria
+
+Obrigado por testar a **Simaria**, assistente de simulação de empréstimos! 💰  
+Seu feedback é essencial para melhorar a experiência e a qualidade das respostas.
+
+## 💬 Experiência com a Simaria
+
+### 1. Facilidade de uso
+A interface foi fácil de entender e utilizar?
+
+⭐ Nota (1 a 5):  
+[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5  
+
+---
+
+### 2. Clareza das respostas
+As respostas foram claras e fáceis de entender?
+
+⭐ Nota (1 a 5):  
+[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5  
+
+---
+
+### 3. Utilidade da simulação
+A simulação ajudou você a entender melhor o impacto do empréstimo?
+
+⭐ Nota (1 a 5):  
+[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5  
+
+---
+
+### 4. Confiabilidade
+Você confia nas informações apresentadas pela Simaria?
+
+⭐ Nota (1 a 5):  
+[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5 
+
+---
+
+### 5. Coerência com o perfil financeiro
+As respostas pareceram adequadas à realidade financeira do cliente?
+
+⭐ Nota (1 a 5):  
+[ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5  
+
+---
+
+## ⚠️ Problemas encontrados
+
+Você encontrou algum erro ou comportamento inesperado?
+
+
+Descreva aqui:
+
+---
+
+## 💡 Sugestões de melhoria
+
+O que poderia melhorar na Simaria?
+
+---
+
+## ⭐ Avaliação geral
+
+De 0 a 10, qual sua nota para a Simaria?
+
+Nota: _____ / 10  
+
+---
+
 ## Métricas Avançadas
 
 Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
