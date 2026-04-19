@@ -97,11 +97,18 @@ streamlit run src/app.py
 
 ---
 
+🎤 Pitch
+Assista à apresentação da Simaria em até 3 minutos — problema, solução, demonstração e diferencial:
+Mostrar Imagem
+
+🔗 [https://www.loom.com/share/843535dd02e64acca168a53a0929d479](https://www.loom.com/share/843535dd02e64acca168a53a0929d479)
+
+---
+
 ## 👩‍💻 Autora
 
 Desenvolvido por **Ana Christina G.** como entrega do Lab **"Bia do Futuro"** — DIO.
 
 <img width="1358" height="640" alt="Simaria 00" src="https://github.com/user-attachments/assets/1fff4078-38cf-4f5c-a830-8b1a5b5a05a1" />
-
 
 [![GitHub](https://img.shields.io/badge/GitHub-AnaChristinaG-181717?style=flat&logo=github)](https://github.com/AnaChristinaG)
