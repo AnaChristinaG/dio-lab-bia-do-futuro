@@ -1,10 +1,10 @@
-# Código da Aplicação - Passo a passo de Excecução
+# Código da Aplicação - Passo a passo de Execução
 
 ## Estrutura Sugerida
 
 ```bash
 # 1. Instalar Ollama (ollama.com)
-# 2. Biaxar modelo leve
+# 2. Baixar modelo leve
 ollama pull phi3
 
 # 3. Testar se funciona
