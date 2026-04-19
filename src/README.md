@@ -1,7 +1,5 @@
 # Código da Aplicação - Passo a passo de Excecução
 
-Esta pasta contém o código do seu agente financeiro.
-
 ## Estrutura Sugerida
 
 ```bash
